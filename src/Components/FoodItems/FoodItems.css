@@ -55,6 +55,27 @@
   .image:hover {
     cursor: pointer;
   }
+  .sortBy{
+    font-weight: bold;
+    
+  }
+  .sortBtn{
+    margin-top: 20px;
+    
+  }
+  .sortBtn button{
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  .sortBtn button:hover{
+    color: navajowhite ;
+  }
   
   @media only screen and (min-width: 0px) and (max-width: 376px) {
     .fooditems {

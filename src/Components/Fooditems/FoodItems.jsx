@@ -18,12 +18,27 @@ function FoodItems() {
   function handleClick(e) {
     return navigate(`/${e.code}`);
   }
+
+  function sortDesc(){
+    fooditems.sort((a,b)=>b.energy_100g-a.energy_100g)
+    setFoodItems([...fooditems])
+  }
+
+  function sortAsc(){
+    fooditems.sort((a,b)=>a.energy_100g-b.energy_100g)
+    setFoodItems([...fooditems])
+  }
   return (
     <div className="container">
       <Navbar />
       <div className="split">
         <div className="foodlist">Food List</div>
         <div className="favorites">Favorites</div>
+      </div>
+      <div className="sortBtn">
+        <label className="sortBy">Sort By Energy: </label>
+        <button onClick={sortDesc}>High To Low</button>
+        <button onClick={sortAsc}>Low to High</button>
       </div>
       <div className="fooditems">
         {fooditems.map((e) => (
