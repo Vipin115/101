@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import "../FoodItems/FoodItems.css";
+import "./FoodItems.css";
 import Navbar from "../Navbar/Navbar";
 import axios from "axios";
 function FoodItems() {

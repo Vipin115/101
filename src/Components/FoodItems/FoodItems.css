@@ -14,11 +14,11 @@
   }
   .foodlist:hover {
     cursor: pointer;
-    color: #8dd2ff;
+    color: lawngreen;
     text-decoration: underline;
   }
   .favorites {
-    background-color: #a4cb88;
+    background-color: #e887d7;
   }
   .fooditems {
     margin-top: 30px;
@@ -46,7 +46,7 @@
   .gen:hover {
     cursor: pointer;
     text-decoration: underline;
-    color: #8dd2ff;
+    color: lawngreen;
   }
   .image {
     width: 100%;

@@ -22,6 +22,7 @@
     width: 30%;
     border: 1px solid black;
     margin: auto;
+    border-collapse: collapse;
   }
   @media only screen and (min-width: 0px) and (max-width: 376px) {
     .parent {

@@ -1,11 +1,11 @@
 import React from "react";
-import "../SingleFoodItem/SingleFoodItem.css";
+import "./SingleFood.css";
 import Navbar from "../Navbar/Navbar";
 import { useState } from "react";
 import { useParams } from "react-router";
 import { useEffect } from "react";
 import axios from "axios";
-function SingleFoodItem() {
+function SingleFood() {
   let [singleFood, setSingleFood] = useState({});
   let { id } = useParams();
 
@@ -44,4 +44,4 @@ function SingleFoodItem() {
   );
 }
 
-export default SingleFoodItem;
+export default SingleFood;
