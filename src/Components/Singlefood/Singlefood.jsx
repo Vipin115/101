@@ -7,14 +7,17 @@ import { useEffect } from "react";
 import axios from "axios";
 function SingleFood() {
   let [singleFood, setSingleFood] = useState({});
-  let { id } = useParams();
+  let { code } = useParams();
 
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/items?id=${id}`)
-      .then((res) => setSingleFood(res.data[0]));
-  }, [id]);
+      .get(`http://localhost:8080/items?code=${code}`).then((res) =>{
+        setSingleFood(res.data[0]);
+        console.log(res.data)
+      } )
+  }, []);
+
   return (
     <div className="parent">
       <Navbar />
