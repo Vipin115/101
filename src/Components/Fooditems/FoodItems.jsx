@@ -10,7 +10,7 @@ function FoodItems() {
   let [fooditems, setFoodItems] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/items").then((res) => {
+    axios.get("https://nodejs-101innovation.herokuapp.com/").then((res) => {
         setFoodItems(res.data);
     });
   }, []);

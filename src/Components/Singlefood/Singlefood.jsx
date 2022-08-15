@@ -12,7 +12,7 @@ function SingleFood() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/items?code=${code}`).then((res) =>{
+      .get(`https://nodejs-101innovation.herokuapp.com/?code=${code}`).then((res) =>{
         setSingleFood(res.data[0]);
         console.log(res.data)
       } )
